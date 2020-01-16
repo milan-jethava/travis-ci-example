@@ -6,6 +6,7 @@ script: ./mvnw clean install
 
 notifications: 
  email: milan.jethava@tatvasoft.com
+ 
 branches:
   only: 
     - master

@@ -1,5 +1,5 @@
 language: java
-os: "windows"
+os: "linux"
 jdk:
  - openjdk8
 

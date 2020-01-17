@@ -4,11 +4,13 @@ jdk:
  - openjdk8
 sudo: true
 dist: trusty
-
 before_install:
   - chmod +x mvnw
-
+stages:
+  - compile
+  - test
+  - name: deploy
+    if: branch = master
 script: ./mvnw clean install
-
 notifications: 
  email: milan.jethava@tatvasoft.com
